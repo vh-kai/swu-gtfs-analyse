@@ -40,6 +40,7 @@ Aus den Ergebnissen der deskriptiven Analyse wurde anschließend ein auffällige
 ## Ergebnisse
 
 1. Das Fahrtenangebot unterscheidet sich deutlich zwischen den Linien.
+   
 L01, L02, L04 und L05 weisen vergleichsweise hohe Fahrtenzahlen auf.
 L14, L15 und L19 haben deutlich eingeschränktere Fahrtenangebote.
 L901 bis L908 bieten die wenigsten Fahrten an.
@@ -49,6 +50,7 @@ Die Abbildung zeigt die Anzahl der Fahrten je Linie und Fahrtrichtung. Dabei wir
 ![Fahrten pro Linie und Richtung](images/fahrten_pro_linie.png)
 
 2. Das Fahrtenangebot verändert sich im Tagesverlauf.
+   
 Aus der Betrachtung der Tagesprofile lassen sich wiederkehrende Angebotsmuster erkennen.
     1. relativ dichtes Tagesangebot, tageszeitlich stärker schwankend: z. B. L01, L02, L04, L05
     2. relativ konstantes Tagesangebot, anschließend Rückgang am Abend: z. B. L06, L07, L08, L09, L13
@@ -63,6 +65,7 @@ In der Abbildung sind exemplarisch ausgewählte Tagesprofile gezeigt. Es ist erk
 ![Tagesprofile ausgewählter Linien](images/tagesprofile.png)
 
 3. Auch innerhalb der Linien gibt es Unterschiede zwischen den Fahrtrichtungen.
+   
 Die meisten Linien zeigen ein ähnliches Muster im Fahrtenangebot zwischen den Fahrtrichtungen. 
 Bei einzelnen Linien treten jedoch deutliche Unterschiede auf. Besonders auffällig ist L19, bei der sich das 
 Fahrtenangebot der beiden direction_id im Tagesverlauf deutlich unterscheidet.
@@ -72,6 +75,7 @@ Die folgende Abbildung zeigt das Fahrtangebot der Linie L09 im Tagesverlauf, auf
 ![Vergleich des Fahrtenangebots von L19 nach Richtung](images/l19_vergleich.png)
 
 4. Bei L02 zeigt sich ein auffälliges Muster in bestimmten Tageszeiten.
+   
 Wie in der Abbildung zu sehen ist, weist L02 insbesondere in den Zeitbereichen 06-10 und 14-18 Uhr ein vergleichsweise hohes Fahrtenangebot auf. Dies zeigt sich vor allem  in den werktäglichen Serviceperioden.
 Die Auswertung stützt damit die Hypothese, dass das höhere Angebot in diesen Zeitbereichen insbesondere mit dem werktäglichen Betrieb zusammenhängt.
 Eine mögliche Interpretation ist, dass dieses Muster in den Zeiträumen mit einem höheren Bedarf zu Schul- und Arbeitszeiten zusammenhängen könnte. Aus den Fahrplandaten allein lässt sich jedoch nicht feststellen, welche Nutzergruppen tatsächlich für dieses Muster verantwortlich sind.
