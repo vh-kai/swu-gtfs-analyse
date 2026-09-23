@@ -1,0 +1,79 @@
+Table routes {
+  route_id text [primary key]
+  agency_id integer
+  route_short_name text
+  route_long_name text
+  route_type integer
+  route_color text
+  route_text_color text
+  route_url text 
+}
+
+Table calendar {
+  service_id text [primary key]
+  start_date integer
+  end_date integer
+  monday  integer
+  tuesday integer
+  wednesday integer
+  thursday integer
+  friday integer
+  saturday integer
+  sunday integer
+}
+
+Table shapes {
+  shape_id text [primary key]
+  shape_pt_lat real
+  shape_pt_lon real
+  shape_pt_sequence integer [primary key]
+  shape_dist_traveled real
+}
+
+Table stop_times {
+  trip_id text [primary key]
+  stop_id text 
+  stop_sequence integer [primary key]
+  arrival_time text
+  departure_time text
+  timepoint integer
+  shape_dist_traveled real
+  pickup_type integer
+  drop_off_type integer
+}
+
+Table stops {
+  stop_id text [primary key] 
+  stop_code text
+  stop_name text
+  stop_lat real
+  stop_lon real
+  stop_desc text
+  wheelchair_boarding text
+  platform_code text
+  location_type integer
+  parent_station text
+  stop_timezone text
+  stop_url text
+  tts_stop_name text
+  zone_id text
+}
+
+Table trips {
+  trip_id text [primary key] 
+  route_id text
+  service_id text
+  direction_id integer
+  shape_id text
+  trip_headsign text
+  trip_short_name text
+  wheelchair_accessible integer
+  bikes_allowed text
+  block_id text 
+}
+
+Ref: routes.route_id < trips.route_id
+Ref: calendar.service_id < trips.service_id
+Ref: shapes.shape_id < trips.shape_id
+Ref: trips.trip_id < stop_times.trip_id
+Ref: stops.stop_id < stop_times.stop_id
