@@ -44,6 +44,8 @@ L01, L02, L04 und L05 weisen vergleichsweise hohe Fahrtenzahlen auf.
 L14, L15 und L19 haben deutlich eingeschränktere Fahrtenangebote.
 L901 bis L908 bieten die wenigsten Fahrten an.
 
+Die Abbildung zeigt die Anzahl der Fahrten je Linie und Fahrtrichtung. Dabei wird sichtbar, dass sich das Fahrtenangebot zwischen den Linien deutlich unterscheidet. Bei mehreren Linien liegen die Fahrtenzahlen der beiden Richtungen nah beieinander, während bei einzelnen Linien größere Unterschiede auftreten.
+
 ![Fahrten pro Linie und Richtung](images/fahrten_pro_linie.png)
 
 2. Das Fahrtenangebot verändert sich im Tagesverlauf.
@@ -56,6 +58,8 @@ Aus der Betrachtung der Tagesprofile lassen sich wiederkehrende Angebotsmuster e
 Bei L02 fällt insbesondere das erhöhte Fahrtenangebot in den Zeitbereichen 06-10 Uhr und 14-18 Uhr auf.
 Bei L10 und L19 zeigt sich in den Daten ein deutlicher Angebotsunterschied zwischen den Fahrtrichtungen.
 
+In der Abbildung sind exemplarisch ausgewählte Tagesprofile gezeigt. Es ist erkennbar, dass sich das Fahrtenangebot der Linien unterschiedlich über den Tagesverlauf verteilt. 
+
 ![Tagesprofile ausgewählter Linien](images/tagesprofile.png)
 
 3. Auch innerhalb der Linien gibt es Unterschiede zwischen den Fahrtrichtungen.
@@ -63,10 +67,12 @@ Die meisten Linien zeigen ein ähnliches Muster im Fahrtenangebot zwischen den F
 Bei einzelnen Linien treten jedoch deutliche Unterschiede auf. Besonders auffällig ist L19, bei der sich das 
 Fahrtenangebot der beiden direction_id im Tagesverlauf deutlich unterscheidet.
 
+Die folgende Abbildung zeigt das Fahrtangebot der Linie L09 im Tagesverlauf, aufgetrennt nach Fahrtrichtungen.
+
 ![Vergleich des Fahrtenangebots von L19 nach Richtung](images/l19_vergleich.png)
 
 4. Bei L02 zeigt sich ein auffälliges Muster in bestimmten Tageszeiten.
-Das vergleichsweise hohe Fahrtenangebot von L02 in den Zeitbereichen 06-10 Ihr und 14-18 Uhr tritt insbesondere bei den werktäglichen Serviceperioden auf.
+Wie in der Abbildung zu sehen ist, weist L02 insbesondere in den Zeitbereichen 06-10 und 14-18 Uhr ein vergleichsweise hohes Fahrtenangebot auf. Dies zeigt sich vor allem  in den werktäglichen Serviceperioden.
 Die Auswertung stützt damit die Hypothese, dass das höhere Angebot in diesen Zeitbereichen insbesondere mit dem werktäglichen Betrieb zusammenhängt.
 Eine mögliche Interpretation ist, dass dieses Muster in den Zeiträumen mit einem höheren Bedarf zu Schul- und Arbeitszeiten zusammenhängen könnte. Aus den Fahrplandaten allein lässt sich jedoch nicht feststellen, welche Nutzergruppen tatsächlich für dieses Muster verantwortlich sind.
 
